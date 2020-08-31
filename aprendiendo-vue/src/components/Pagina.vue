@@ -1,4 +1,7 @@
 <template>
+<div class="general">
+    <Slider></Slider>
+    <div class="center">
     <section id="content">
         <h2 class="subheader">Pagina de pruebas</h2>
         <h3>{{id_desde_url}}</h3>
@@ -6,9 +9,15 @@
         <h4>{{nombre}}</h4>
         <button @click="redirigirAlBlog()">Al Blog</button>  
     </section>
+      <Sidebar></Sidebar>
+      <div class="clearfix"></div>
+    </div>
+  </div>
 </template>
 
 <script>
+import Slider from './Slider.vue';
+import Sidebar from './Sidebar.vue';
 export default {
     name: 'Pagina',
 
@@ -40,6 +49,10 @@ export default {
        redirigirAlBlog(){
            this.$router.push('/blog')
        }
+    }, 
+    components: {
+        Slider,
+        Sidebar
     }
    
 };
