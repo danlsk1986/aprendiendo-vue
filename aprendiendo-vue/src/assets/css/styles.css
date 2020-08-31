@@ -115,6 +115,22 @@ body {
     font-weight: bold;
 }
 
+.yeargreen{
+    background-color: green!important;
+    color: #ffffff!important;
+    padding: 10px!important;
+    width: 111px!important;
+    text-align: center!important;
+}
+
+.yearred{
+    background-color: red!important;
+    color: #ffffff!important;
+    padding: 10px!important;
+    width: 111px!important;
+    text-align: center!important;
+}
+
 #slider{
     width: 100%;
     height: 350px;
